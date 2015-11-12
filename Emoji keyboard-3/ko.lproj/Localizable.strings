@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  FontDesigner
+
+  Created by chenshun on 13-5-6.
+  Copyright (c) 2013年 ChenShun. All rights reserved.
+*/
+"Upgrade" = "업그레이드";
+"Free Upgrade" = "Free Upgrade";
+"Free Upgrade_Desc" = "If you rate us your honest reviews, you can get more funny emojis and art text.";
+"Restore purchases" = "Restore purchases";
+"Restore purchases_Desc" = "Restore the productions that you've purchased.";
+"Unlock all restrictions" = "Unlock all restrictions";
+"Unlock all restrictions_Desc" = "Remove Ads & unlock all restrictions.Have fun!";
+"Unlock all emoji arts" = "Unlock all emoji arts";
+"Unlock all emoji arts_Desc" = "You can use all emoji arts.";
+"Remove Advertisement" = "Remove Advertisement";
+"Remove Advertisement_Desc" = "It would never appear the tiresome Ads.";
+"Unlock all emoticons" = "Unlock all emoticons";
+"Unlock all emoticons_Desc" = "You could use all emoticons as you want.";
+"Upgrade and Restore" = "업그레이드 및 복원";
+
+"Settings" = "설정";
+"Feedback" = "피드백";
+"About" = "약";
+"Invite By Email" = "이메일로 초대하기";
+"Invite By SMS" = "SMS로 초대";
+"Send feedback" = "보고서 보내기";
+"Version" = "버전";
+"Cancel" = "취소";
+"invite" = "Hello,'Characters'is a great app and easy to use,check out it on the App Store,I think you'll like it! itms://itunes.apple.com/us/app/id658329345?mt=8";
+"ok" = "OK";
+"Remove ads" = "Remove ads";
+"Restore" = "Restore";
+"View more" = "더보기";
+"More Apps" = "기타";
+"Copied" = "복사";
+"SMS"= "SMS";
+"Email" = "이메일";
+"Copy" = "복사";
+"Clear history" = "웹 브라우저";
+"Emoji Art" = "에모지 예술";
+"Canvas" = "캔버스";
+"Favorites" = "즐겨찾기";
+"Fun" = "재미";
+"Food" = "음식";
+"Lifestyle" = "라이프스타일";
+"Nature" = "자연";
+"Love" = "사랑";
+"Celebration" = "축 하";
+"Hello" = "헬로";
+"Smiley" = "스마일";
+"Xmas" = "크리스마스";
+"Valentine" = "밸런타인";
+"Birthday" = "생일";
+"Holiday" = "휴일";
+"Weather" = "날씨";
+"Add to Favorites" = "즐겨찾기에 추가";
+"Emoticon" = "이모티콘";
+
+"No mail notice" = "No Mail accout";
+"No facebook notice" = "No Facebook accout";
+"No twitter notice" = "No Twitter accout";
+"No Sina notice" = "No Sian Weibo accout";
+"No mail account" = "There are no mail accouts configured, You can add or creat a mail account in Settings";
+"No facebook account" = "There are no Facebook accouts configured, You can add or creat a Facebook account in Settings";
+"No twitter account" = "There are no Twitter accouts configured, You can add or creat a Twitter account in Settings";
+"No Sina account" = "There are no Sina Weibo accouts configured, You can add or creat a Sina account in Settings";
+"Device not support" = "Your system version is too low to support this feature!";
