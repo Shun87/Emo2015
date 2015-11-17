@@ -1,0 +1,72 @@
+/* 
+  Localizable.strings
+  FontDesigner
+
+  Created by chenshun on 13-5-6.
+  Copyright (c) 2013年 ChenShun. All rights reserved.
+*/
+"Upgrade" = "升级";
+"Free Upgrade" = "Free Upgrade";
+"Free Upgrade_Desc" = "If you rate us your honest reviews, you can get more funny emojis and art text.";
+"Restore purchases" = "Restore purchases";
+"Restore purchases_Desc" = "Restore the productions that you've purchased.";
+"Unlock all restrictions" = "Unlock all restrictions";
+"Unlock all restrictions_Desc" = "Remove Ads & unlock all restrictions.Have fun!";
+"Unlock all emoji arts" = "Unlock all emoji arts";
+"Unlock all emoji arts_Desc" = "You can use all emoji arts.";
+"Remove Advertisement" = "Remove Advertisement";
+"Remove Advertisement_Desc" = "It would never appear the tiresome Ads.";
+"Unlock all emoticons" = "Unlock all emoticons";
+"Unlock all emoticons_Desc" = "You could use all emoticons as you want.";
+"Upgrade and Restore" = "升级和恢复购买";
+
+"Settings" = "设置";
+"Feedback" = "反馈";
+"About" = "关于";
+"Invite By Email" = "邮件邀请";
+"Invite By SMS" = "短信邀请";
+"Send feedback" = "发送反馈";
+"Version" = "版本号";
+"Cancel" = "取消";
+"invite" = "'Characters'是个非常棒的软件，相信你会喜欢，快去app store下载吧！itms://itunes.apple.com/cn/app/id658329345?mt=8";
+"ok" = "确定";
+"Remove ads" = "移除广告";
+"Restore" = "恢复";
+"learn more" = "了解更多";
+"Rate us" ="评论我们";
+"View more" = "查看更多";
+"More Apps" = "更多应用";
+"Copied" = "已拷贝";
+"SMS"= "短信";
+"Text" = "文字";
+"Email" = "邮件";
+"Copy" = "拷贝";
+"Clear history" = "清除历史记录";
+"Emoji Art" = "表情符号";
+"Emoticon" = "表情";
+"Canvas" = "符号设计";
+"Favorites" = "收藏夹";
+"Fun" = "娱乐";
+"Food" = "美食";
+"Lifestyle" = "生活";
+"Nature" = "大自然";
+"Love" = "爱慕";
+"Celebration" = "庆祝";
+"Hello" = "问候";
+"Smiley" = "微笑符";
+"Xmas" = "圣诞节符号";
+"Valentine" = "情人节符号";
+"Birthday" = "生日祝贺";
+"Holiday" = "节日符号";
+"Weather" = "天气";
+"Add to Favorites" = "收藏";
+
+"No mail notice" = "无邮箱帐户";
+"No facebook notice" = "无Facebook 帐户";
+"No twitter notice" = "无Twitter 帐户";
+"No Sina notice" = "无微博帐户";
+"No mail account" = "尚未配置邮箱帐户，您可再“设置”中添加或创建邮箱帐户";
+"No facebook account" = "尚未配置Facebook帐户，您可再“设置”中添加或创建facebook帐户";
+"No twitter account" = "尚未配置Twitter帐户，您可再“设置”中添加或创建twitter帐户";
+"No Sina account" = "尚未配置新浪微博帐户，您可再“设置”中添加或创建Sina帐户";
+"Device not support" = "您的设备系统不支持分享的功能！";

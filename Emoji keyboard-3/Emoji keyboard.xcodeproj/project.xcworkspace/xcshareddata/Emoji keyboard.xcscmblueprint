@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "11E07B90ED5423E5252957C7CA2763E60B548F4B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "11E07B90ED5423E5252957C7CA2763E60B548F4B" : 0,
+    "ABA5F52AED920D2DFDE3623CBC4CF0BBEBF166CF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA49F82B-5FCD-48F9-86FA-B0B951240C83",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "11E07B90ED5423E5252957C7CA2763E60B548F4B" : "FFFFNePro\/",
+    "ABA5F52AED920D2DFDE3623CBC4CF0BBEBF166CF" : "FFFFNePro\/MicsAbout\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Emoji keyboard",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Emoji keyboard-3-- Font Design\/Emoji keyboard-3\/Emoji keyboard.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Shun87\/FFFFNePro.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "11E07B90ED5423E5252957C7CA2763E60B548F4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Shun87\/MicsAbout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABA5F52AED920D2DFDE3623CBC4CF0BBEBF166CF"
+    }
+  ]
+}
