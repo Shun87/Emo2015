@@ -96,7 +96,7 @@
 		36AB5376184A31CF0082ADEF /* EmoticonMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AB5374184A31CF0082ADEF /* EmoticonMainViewController.m */; };
 		36AB5377184A31CF0082ADEF /* EmoticonMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AB5375184A31CF0082ADEF /* EmoticonMainViewController.xib */; };
 		36ABE4051927881300537BA6 /* Animated in Resources */ = {isa = PBXBuildFile; fileRef = 36ABE4041927881300537BA6 /* Animated */; };
-		36ABE40B1927988B00537BA6 /* CoolFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ABE4081927988B00537BA6 /* CoolFontViewController.m */; };
+		36ABE40B1927988B00537BA6 /* CoolFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36ABE4081927988B00537BA6 /* CoolFontView.m */; };
 		36ABE40C1927988B00537BA6 /* CoolFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36ABE4091927988B00537BA6 /* CoolFontViewController.xib */; };
 		36ABE41F192798EF00537BA6 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 36ABE40D192798EF00537BA6 /* bubble.png */; };
 		36ABE420192798EF00537BA6 /* bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36ABE40E192798EF00537BA6 /* bubble@2x.png */; };
@@ -428,8 +428,8 @@
 		36AB5374184A31CF0082ADEF /* EmoticonMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmoticonMainViewController.m; sourceTree = "<group>"; };
 		36AB5375184A31CF0082ADEF /* EmoticonMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonMainViewController.xib; sourceTree = "<group>"; };
 		36ABE4041927881300537BA6 /* Animated */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Animated; path = ../../Animated; sourceTree = "<group>"; };
-		36ABE4071927988B00537BA6 /* CoolFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolFontViewController.h; sourceTree = "<group>"; };
-		36ABE4081927988B00537BA6 /* CoolFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolFontViewController.m; sourceTree = "<group>"; };
+		36ABE4071927988B00537BA6 /* CoolFontView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolFontView.h; sourceTree = "<group>"; };
+		36ABE4081927988B00537BA6 /* CoolFontView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolFontView.m; sourceTree = "<group>"; };
 		36ABE4091927988B00537BA6 /* CoolFontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolFontViewController.xib; sourceTree = "<group>"; };
 		36ABE40D192798EF00537BA6 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
 		36ABE40E192798EF00537BA6 /* bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble@2x.png"; sourceTree = "<group>"; };
@@ -896,8 +896,8 @@
 				3699715717368ED800D47276 /* AppDelegate.m */,
 				369D11F71762381A00C607A8 /* MBProgressHUD.h */,
 				369D11F81762381A00C607A8 /* MBProgressHUD.m */,
-				36ABE4071927988B00537BA6 /* CoolFontViewController.h */,
-				36ABE4081927988B00537BA6 /* CoolFontViewController.m */,
+				36ABE4071927988B00537BA6 /* CoolFontView.h */,
+				36ABE4081927988B00537BA6 /* CoolFontView.m */,
 				36FDF26D17BBAC620083165E /* EmoticonViewController.h */,
 				36FDF26E17BBAC620083165E /* EmoticonViewController.m */,
 				E1FE9B4E1BF9B9C2005E7A80 /* FavoriteViewController.h */,
@@ -1515,7 +1515,7 @@
 				36F9C5C2174E64AF00CD26F8 /* SymbolCell.m in Sources */,
 				E1FE31D71BF4AF4B0006147A /* NSLayoutConstraint+PureLayout.m in Sources */,
 				36F9C5C5174E658000CD26F8 /* SymbolDesc.m in Sources */,
-				36ABE40B1927988B00537BA6 /* CoolFontViewController.m in Sources */,
+				36ABE40B1927988B00537BA6 /* CoolFontView.m in Sources */,
 				36F9C5C9174E674100CD26F8 /* SymbolListViewController.m in Sources */,
 				E172A3CB1BF6D12300112B7E /* UIView+Subviews.m in Sources */,
 				36FDF35017BBDCA10083165E /* EmoticonViewController.m in Sources */,

@@ -10,7 +10,7 @@
 #import "SymbolView.h"
 #import "TTSocial.h"
 #import "SymbolListViewController.h"
-#import "CoolFontViewController.h"
+#import "CoolFontView.h"
 
 @interface FontPreviewController : UIViewController<SymbolViewDelegate, UIActionSheetDelegate, UITextViewDelegate>
 {
@@ -33,12 +33,9 @@
     TTSocial *social;
     UISlider *aSlider;
     
-    
-    BOOL showshowSystemKey;
-    
     SymbolListViewController *symbolListController;
     SymbolView *unicodeKeyboard;
-    CoolFontViewController *coolFontViewController;
+    CoolFontView *fontView;
     CoolFont *currentFont;
     
     CGFloat bottom;

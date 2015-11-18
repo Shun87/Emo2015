@@ -63,8 +63,8 @@
         {
             BOOL needShow = NO;
             NSString *rejectDateStr = [localDic objectForKey:@"kLastRejectDownloadDate"];
-            NSString *rejectCount = [localDic objectForKey:@"kRejectownloadCount"];
-            if ([rejectCount intValue] >= 3)
+            int rejectCount = [[localDic objectForKey:@"kRejectownloadCount"] integerValue];
+            if (rejectCount > 4)
             {
                 return;
             }

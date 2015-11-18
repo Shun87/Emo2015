@@ -80,7 +80,7 @@
 - (BOOL)needShowRateView
 {
     int maxActionCnt = 25;
-    uint secs = 60 * 20;
+    uint secs = 60 * 18;
     
     BOOL readyToShow = NO;
     int switchCnt = [[localDic objectForKey:kNumOfSwitchPage] intValue]; 
@@ -91,7 +91,7 @@
         uint currentUtc = [[NSDate date] timeIntervalSince1970];
         if (currentUtc - luanchUtc > secs && switchCnt >= maxActionCnt)
         {
-            // 已经使用超过20分钟了
+            // 已经使用超过18分钟了
             readyToShow = YES;
         }
     }
@@ -111,7 +111,7 @@
             {
                 uint rejectUtc = [[UserParameter dateFromStr:rejectDateStr] timeIntervalSince1970];
                 uint currentUtc = [[NSDate date] timeIntervalSince1970];
-                if (currentUtc - rejectUtc > secs / 2 || switchCnt >= maxActionCnt)
+                if (currentUtc - rejectUtc > 60 * 5 || switchCnt >= maxActionCnt)
                 {
                     readyToShow = YES;
                 }

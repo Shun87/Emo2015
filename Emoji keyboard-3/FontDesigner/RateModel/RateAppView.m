@@ -26,6 +26,8 @@
     UIButton *closeButton;
     BaseAlertView *baseAlertView;
     TTSocial *socila;
+    
+    BOOL visible;
 }
 @end
 
@@ -52,6 +54,7 @@
     {
         socila = [[TTSocial alloc] init];
         socila.viewController = [self appRootViewController];
+        visible = NO;
     }
     
     return self;
@@ -63,6 +66,13 @@
     {
         return;
     }
+    
+    if (visible)
+    {
+        return;
+    }
+    
+    visible = YES;
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 220)];
     view.backgroundColor = [UIColor clearColor];
     
@@ -215,6 +225,7 @@
 
 - (IBAction)sendFeedback:(id)sender
 {
+    visible = NO;
     [baseAlertView dismissAlert:^{
         
         [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.0", nil) body:nil];
@@ -223,6 +234,7 @@
 
 - (IBAction)closeView:(id)sender
 {
+    visible = NO;
     [baseAlertView dismissAlert:^{
     }];
     baseAlertView = nil;
@@ -231,14 +243,6 @@
 + (NSString *)appUrl
 {
     NSString *rateUrl = @"itms://itunes.apple.com/us/app/id648963730?mt=8";
-//    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0f && [[UIDevice currentDevice].systemVersion floatValue] < 7.1f)
-//    {
-//        rateUrl = [NSString stringWithFormat:kRateiOS7AppStoreURLFormat, @"648963730"];
-//    }
-//    else
-//    {
-//        rateUrl = [NSString stringWithFormat:kRateAppUrl, @"648963730"];
-//    }
     return rateUrl;
 }
 

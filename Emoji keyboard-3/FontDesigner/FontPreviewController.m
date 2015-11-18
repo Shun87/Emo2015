@@ -118,8 +118,8 @@
     [self.emojiKeyboard setSymbolShowType:ST_Emoji];
     
     [self showEmojiKey:[self.buttons firstObject]];
-    coolFontViewController = [[CoolFontViewController alloc] initWithNibName:@"CoolFontViewController" bundle:nil];
-    showshowSystemKey = NO;
+    fontView = [[CoolFontView alloc] initWithFrame:CGRectMake(0, 0, window.bounds.size.width, height)];
+    fontView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 
 - (void)setUpToolView
@@ -127,7 +127,7 @@
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     toolView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, window.bounds.size.width, 35)];
     toolView.backgroundColor = [UIColor blackColor];
-    UIButton *fontButton = [self addButton:@"Font" sel:@selector(coolFontKeyboard:)];
+    UIButton *fontButton = [self addButton:@"Font" sel:@selector(showFontKey:)];
     UIButton *emojiButton = [self addButton:@"Emoji" sel:@selector(showEmojiKey:)];
     UIButton *extraButton = [self addButton:@"Extra" sel:@selector(showExtraKey:)];
     UIButton *abcButton = [self addButton:@"ABC" sel:@selector(showSystemKey:)];
@@ -161,7 +161,7 @@
     bubbleImageView.image = [[UIImage imageNamed:@"bubbleSelected.png"] stretchableImageWithLeftCapWidth:30 topCapHeight:15];
     [bubbleImageView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:55.0];
     [bubbleImageView autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:15.0];
-    [bubbleImageView autoPinEdgeToSuperviewEdge:ALEdgeTrailing withInset:80.0];
+    [bubbleImageView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.view withMultiplier:0.85];
     bubbleImageView.userInteractionEnabled = YES;
     
     [UIView autoSetPriority:(UILayoutPriorityRequired - 1) forConstraints:^{
@@ -198,6 +198,15 @@
     self.deleteButton.hidden = YES;
 }
 
+- (CGSize)sizeForString:(NSString *)string font:(UIFont *)font constrainedToSize:(CGSize)constrainedSize lineBreakMode:(NSLineBreakMode)lineBreakMode
+{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.lineBreakMode = lineBreakMode;
+    NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
+    CGRect boundingRect = [string boundingRectWithSize:constrainedSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+    return CGSizeMake(ceilf(boundingRect.size.width), ceilf(boundingRect.size.height));
+}
+
 - (void)gwl_inputTextDidChanged:(NSNotification *)notification
 {
     self.deleteButton.hidden = [textView1.text length] == 0;
@@ -209,9 +218,12 @@
     }
     if (self.heightConstraint)
     {
-        float newHeight = [textView1 sizeThatFits:textView1.frame.size].height;
+        float newHeight = [self sizeForString:textView1.text font:[UIFont systemFontOfSize:20] constrainedToSize:CGSizeMake(textView1.frame.size.width, 2000) lineBreakMode:NSLineBreakByWordWrapping].height;
+        
         self.heightConstraint.constant = newHeight + 16.0;
+        [bubbleImageView setNeedsLayout];
         [bubbleImageView layoutIfNeeded];
+        [textView1 layoutIfNeeded];
 //        当你清空输入框时(_textView.text=@"";)，不会自动触发textChanged:，你需要重写setText:方法来调用textChanged
         [textView1 scrollRangeToVisible:textView1.selectedRange];
     }
@@ -221,6 +233,7 @@
 {
     NSString *str = [notice object];
     [textView1 insertText:str];
+    [self gwl_inputTextDidChanged:nil];
 }
 
 - (IBAction)upgradeAction:(id)sender
@@ -316,6 +329,11 @@
     [self performSelector:@selector(beganEding) withObject:nil afterDelay:0.1];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
 - (void)beganEding
 {
     [textView1 becomeFirstResponder];
@@ -352,10 +370,10 @@
     [[RateAppView sharedInstance] showRateView];
 }
 
-- (IBAction)coolFontKeyboard:(id)sender
+- (IBAction)showFontKey:(id)sender
 {
-    coolFontViewController.curFont = self.currentFont;
-    textView1.inputView = coolFontViewController.view;
+    fontView.curFont = self.currentFont;
+    textView1.inputView = fontView;
     [textView1 reloadInputViews];
     [self changeButtonImage:sender track:YES];
     
