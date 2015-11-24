@@ -215,6 +215,7 @@
         self.heightConstraint.constant = 90.0;
         [bubbleImageView layoutIfNeeded];
         return;
+        NSLog(@"%@", textView1.text);
     }
     if (self.heightConstraint)
     {

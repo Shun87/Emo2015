@@ -228,7 +228,7 @@
     visible = NO;
     [baseAlertView dismissAlert:^{
         
-        [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.0", nil) body:nil];
+        [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.2", nil) body:nil];
     }];
 }
 

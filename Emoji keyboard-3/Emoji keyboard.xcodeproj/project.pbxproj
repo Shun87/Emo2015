@@ -43,7 +43,6 @@
 		363B3809173E01FB00753884 /* ProVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363B3807173E01FB00753884 /* ProVersionViewController.xib */; };
 		364FB1111750E64D006B9CF2 /* Symbols.plist in Resources */ = {isa = PBXBuildFile; fileRef = 364FB1131750E64D006B9CF2 /* Symbols.plist */; };
 		3658985C176C5D8700EE1C1F /* FontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3658985B176C5D7C00EE1C1F /* FontViewController.xib */; };
-		3658985D176C5D9700EE1C1F /* FontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3658985A176C5D7C00EE1C1F /* FontViewController.m */; };
 		366FA02617BD101C0074FFC9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 366FA01B17BD101C0074FFC9 /* Icon-72.png */; };
 		366FA02717BD101C0074FFC9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 366FA01C17BD101C0074FFC9 /* Icon-72@2x.png */; };
 		366FA02A17BD101C0074FFC9 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 366FA01F17BD101C0074FFC9 /* Icon-Small.png */; };
@@ -257,6 +256,14 @@
 		E18729EB1BF8598A006C5701 /* emoji_toolbar_button_sel5.png in Resources */ = {isa = PBXBuildFile; fileRef = E18729E81BF8598A006C5701 /* emoji_toolbar_button_sel5.png */; };
 		E18729EC1BF8598A006C5701 /* emoji_toolbar_button_sel5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E18729E91BF8598A006C5701 /* emoji_toolbar_button_sel5@2x.png */; };
 		E18729ED1BF8598A006C5701 /* emoji_toolbar_button_sel5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E18729EA1BF8598A006C5701 /* emoji_toolbar_button_sel5@3x.png */; };
+		E187E8B21C03FDA00077E425 /* cherokee_alphabet.txt in Resources */ = {isa = PBXBuildFile; fileRef = E187E8B11C03FDA00077E425 /* cherokee_alphabet.txt */; };
+		E187E8B41C0400F60077E425 /* coffeefont_alphabet.txt in Resources */ = {isa = PBXBuildFile; fileRef = E187E8B31C0400F60077E425 /* coffeefont_alphabet.txt */; };
+		E187E8B61C0401520077E425 /* blackball_alphabet.txt in Resources */ = {isa = PBXBuildFile; fileRef = E187E8B51C0401520077E425 /* blackball_alphabet.txt */; };
+		E187E8BB1C04067D0077E425 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187E8B81C04067D0077E425 /* Security.framework */; };
+		E187E8C71C04090C0077E425 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E187E8C61C04090C0077E425 /* libz.tbd */; };
+		E187E8C91C0409150077E425 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E187E8C81C0409150077E425 /* libc++.tbd */; };
+		E187E8D01C040C1B0077E425 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187E8CE1C040C1B0077E425 /* Fabric.framework */; };
+		E187E8D11C040C1B0077E425 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E187E8CF1C040C1B0077E425 /* Crashlytics.framework */; };
 		E1C4E6EF1BFACD4D006BC6B6 /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1C4E6ED1BFACD4C006BC6B6 /* emoji.plist */; };
 		E1C4E6F01BFACD4D006BC6B6 /* emoji83.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1C4E6EE1BFACD4C006BC6B6 /* emoji83.plist */; };
 		E1C4E6F51BFACE2A006BC6B6 /* btn_close_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E1C4E6F11BFACE2A006BC6B6 /* btn_close_normal.png */; };
@@ -360,8 +367,6 @@
 		364FB1121750E64D006B9CF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Symbols.plist; sourceTree = "<group>"; };
 		365897B0176C5CA400EE1C1F /* FontPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontPreviewController.h; sourceTree = "<group>"; };
 		365897B1176C5CA400EE1C1F /* FontPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontPreviewController.m; sourceTree = "<group>"; };
-		36589859176C5D7C00EE1C1F /* FontViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontViewController.h; sourceTree = "<group>"; };
-		3658985A176C5D7C00EE1C1F /* FontViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontViewController.m; sourceTree = "<group>"; };
 		3658985B176C5D7C00EE1C1F /* FontViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontViewController.xib; sourceTree = "<group>"; };
 		366FA01B17BD101C0074FFC9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		366FA01C17BD101C0074FFC9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
@@ -610,6 +615,14 @@
 		E18729E81BF8598A006C5701 /* emoji_toolbar_button_sel5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emoji_toolbar_button_sel5.png; sourceTree = "<group>"; };
 		E18729E91BF8598A006C5701 /* emoji_toolbar_button_sel5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_toolbar_button_sel5@2x.png"; sourceTree = "<group>"; };
 		E18729EA1BF8598A006C5701 /* emoji_toolbar_button_sel5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoji_toolbar_button_sel5@3x.png"; sourceTree = "<group>"; };
+		E187E8B11C03FDA00077E425 /* cherokee_alphabet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cherokee_alphabet.txt; sourceTree = "<group>"; };
+		E187E8B31C0400F60077E425 /* coffeefont_alphabet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = coffeefont_alphabet.txt; sourceTree = "<group>"; };
+		E187E8B51C0401520077E425 /* blackball_alphabet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blackball_alphabet.txt; sourceTree = "<group>"; };
+		E187E8B81C04067D0077E425 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E187E8C61C04090C0077E425 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E187E8C81C0409150077E425 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E187E8CE1C040C1B0077E425 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E187E8CF1C040C1B0077E425 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		E1C4E6ED1BFACD4C006BC6B6 /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = emoji.plist; path = ../../emoji.plist; sourceTree = "<group>"; };
 		E1C4E6EE1BFACD4C006BC6B6 /* emoji83.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = emoji83.plist; path = ../../emoji83.plist; sourceTree = "<group>"; };
 		E1C4E6F11BFACE2A006BC6B6 /* btn_close_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_close_normal.png; sourceTree = "<group>"; };
@@ -671,14 +684,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E187E8C91C0409150077E425 /* libc++.tbd in Frameworks */,
+				E187E8C71C04090C0077E425 /* libz.tbd in Frameworks */,
 				E1FE31C41BF47A630006147A /* CoreMedia.framework in Frameworks */,
 				363B37F5173DFB6500753884 /* AudioToolbox.framework in Frameworks */,
 				E1FE9B611BFA0893005E7A80 /* GoogleMobileAds.framework in Frameworks */,
 				363B37F9173DFB7300753884 /* AdSupport.framework in Frameworks */,
+				E187E8BB1C04067D0077E425 /* Security.framework in Frameworks */,
 				E1FE31C01BF4788E0006147A /* libz.1.2.5.tbd in Frameworks */,
 				363B37F3173DFB5500753884 /* StoreKit.framework in Frameworks */,
 				36A71AC01ABF0C6000EBEAAE /* EventKitUI.framework in Frameworks */,
 				36A71ABE1ABF0C5800EBEAAE /* EventKit.framework in Frameworks */,
+				E187E8D01C040C1B0077E425 /* Fabric.framework in Frameworks */,
 				3685018A19168897009EB62C /* AVFoundation.framework in Frameworks */,
 				3685018819168891009EB62C /* CoreTelephony.framework in Frameworks */,
 				36AB52E3184A244A0082ADEF /* ImageIO.framework in Frameworks */,
@@ -688,6 +705,7 @@
 				36C8FE7017375421002B7E6D /* QuartzCore.framework in Frameworks */,
 				36C8FE5E17373F24002B7E6D /* MessageUI.framework in Frameworks */,
 				369971881736AF6C00D47276 /* CoreText.framework in Frameworks */,
+				E187E8D11C040C1B0077E425 /* Crashlytics.framework in Frameworks */,
 				3699714817368ED700D47276 /* UIKit.framework in Frameworks */,
 				3699714A17368ED700D47276 /* Foundation.framework in Frameworks */,
 				3699714C17368ED700D47276 /* CoreGraphics.framework in Frameworks */,
@@ -844,6 +862,9 @@
 			isa = PBXGroup;
 			children = (
 				E1FE31C51BF47BA60006147A /* Images.xcassets */,
+				E187E8CE1C040C1B0077E425 /* Fabric.framework */,
+				E187E8CF1C040C1B0077E425 /* Crashlytics.framework */,
+				E187E8B81C04067D0077E425 /* Security.framework */,
 				E1FE9B601BFA0893005E7A80 /* GoogleMobileAds.framework */,
 				36C0C608177E8B7A00073F2E /* Social.framework */,
 				363B37FA173DFB7900753884 /* MobileCoreServices.framework */,
@@ -871,6 +892,8 @@
 		3699714617368ED700D47276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E187E8C81C0409150077E425 /* libc++.tbd */,
+				E187E8C61C04090C0077E425 /* libz.tbd */,
 				E1FE31C31BF47A630006147A /* CoreMedia.framework */,
 				E1FE31BF1BF4788E0006147A /* libz.1.2.5.tbd */,
 				36A71ABF1ABF0C6000EBEAAE /* EventKitUI.framework */,
@@ -890,7 +913,6 @@
 			children = (
 				E1C4E6F91BFACE3A006BC6B6 /* Res */,
 				E1FE31D91BF4AF730006147A /* common */,
-				E1FE31D81BF4AF5C0006147A /* xib */,
 				36AB536A184A30950082ADEF /* iRate */,
 				3699715617368ED800D47276 /* AppDelegate.h */,
 				3699715717368ED800D47276 /* AppDelegate.m */,
@@ -909,8 +931,6 @@
 				36D00827184ACC7600CBA755 /* help_portrait_iphone_en.html */,
 				365897B0176C5CA400EE1C1F /* FontPreviewController.h */,
 				365897B1176C5CA400EE1C1F /* FontPreviewController.m */,
-				36589859176C5D7C00EE1C1F /* FontViewController.h */,
-				3658985A176C5D7C00EE1C1F /* FontViewController.m */,
 				3617B53E179595570008A26A /* ArtEmojiViewController.h */,
 				3617B53F179595570008A26A /* ArtEmojiViewController.m */,
 				3617B541179595570008A26A /* ArtViewController.h */,
@@ -944,8 +964,6 @@
 				36D144A017BC433D009ED4F8 /* iBread.plist */,
 				36C0A848184AD75100E04444 /* TTSocial.m */,
 				36C0A849184AD75100E04444 /* TTSocial.h */,
-				36153C5C176F52B100401FB8 /* CommonSymbol.plist */,
-				363A604C17EA099200B80216 /* UnicodeMap.plist */,
 				36FC3B711760DBBA00434D5A /* App spread  */,
 				369971841736A8E500D47276 /* image */,
 				364FB1131750E64D006B9CF2 /* Symbols.plist */,
@@ -958,6 +976,7 @@
 		3699714E17368ED800D47276 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1FE9B501BF9B9C2005E7A80 /* FavoriteViewController.xib */,
 				36ABE4091927988B00537BA6 /* CoolFontViewController.xib */,
 				36FDF26F17BBAC620083165E /* EmoticonViewController.xib */,
 				36AB5375184A31CF0082ADEF /* EmoticonMainViewController.xib */,
@@ -1032,11 +1051,14 @@
 				36ABE4401927A2B400537BA6 /* boxed_alphabeth.txt */,
 				36ABE4411927A2B400537BA6 /* caterpillar_alphabet.txt */,
 				36ABE4421927A2B400537BA6 /* circle_alphabeth.txt */,
+				E187E8B51C0401520077E425 /* blackball_alphabet.txt */,
 				36ABE4431927A2B400537BA6 /* cloudy_alphabet.txt */,
 				36ABE4441927A2B400537BA6 /* comic_alphabeth.txt */,
 				36ABE4451927A2B400537BA6 /* compact_alphabeth.txt */,
+				E187E8B31C0400F60077E425 /* coffeefont_alphabet.txt */,
 				36ABE4461927A2B400537BA6 /* crazy_alphabeth.txt */,
 				36ABE4471927A2B400537BA6 /* cute_alphabeth.txt */,
+				E187E8B11C03FDA00077E425 /* cherokee_alphabet.txt */,
 				36ABE4481927A2B400537BA6 /* diamonds_alphabet.txt */,
 				36ABE4491927A2B400537BA6 /* dotted_alphabeth.1.txt */,
 				36ABE44A1927A2B400537BA6 /* edamame_alphabeth.txt */,
@@ -1103,9 +1125,12 @@
 		E1C4E6F91BFACE3A006BC6B6 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				36ABE43B1927A2B400537BA6 /* coolfont */,
 				E172A3CC1BF7051F00112B7E /* emoji_unicode.plist */,
 				E1C4E6ED1BFACD4C006BC6B6 /* emoji.plist */,
 				E1C4E6EE1BFACD4C006BC6B6 /* emoji83.plist */,
+				36153C5C176F52B100401FB8 /* CommonSymbol.plist */,
+				363A604C17EA099200B80216 /* UnicodeMap.plist */,
 				367D268319363AE0005DF48B /* EmojiArt */,
 				36ABE4041927881300537BA6 /* Animated */,
 				36D00820184AC0D400CBA755 /* PRO */,
@@ -1129,19 +1154,10 @@
 			path = PureLayout;
 			sourceTree = "<group>";
 		};
-		E1FE31D81BF4AF5C0006147A /* xib */ = {
-			isa = PBXGroup;
-			children = (
-				E1FE9B501BF9B9C2005E7A80 /* FavoriteViewController.xib */,
-			);
-			name = xib;
-			sourceTree = "<group>";
-		};
 		E1FE31D91BF4AF730006147A /* common */ = {
 			isa = PBXGroup;
 			children = (
 				E172A3C21BF6D12300112B7E /* HorizontalTableView */,
-				36ABE43B1927A2B400537BA6 /* coolfont */,
 				E1FE31CB1BF4AF4B0006147A /* PureLayout */,
 				36FDF26B17BBAC620083165E /* EmoticonCell.h */,
 				36FDF26C17BBAC620083165E /* EmoticonCell.m */,
@@ -1205,6 +1221,7 @@
 				3699714017368ED700D47276 /* Sources */,
 				3699714117368ED700D47276 /* Frameworks */,
 				3699714217368ED700D47276 /* Resources */,
+				E187E8B71C0405DA0077E425 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1377,6 +1394,7 @@
 				36ABE42A192798EF00537BA6 /* Life_Emo.jpg in Resources */,
 				367D26A119363AE0005DF48B /* EmojiArtWeather.plist in Resources */,
 				FA44901817AA24DA00148739 /* Localizable.strings in Resources */,
+				E187E8B21C03FDA00077E425 /* cherokee_alphabet.txt in Resources */,
 				36ABE42C192798EF00537BA6 /* Mood_Emo.jpg in Resources */,
 				367D278619364529005DF48B /* Weather_Emo.jpg in Resources */,
 				36AB5377184A31CF0082ADEF /* EmoticonMainViewController.xib in Resources */,
@@ -1426,6 +1444,7 @@
 				E1DB48B31BF72CFB00EEDCF8 /* emoji_button_sel.png in Resources */,
 				366FA02E17BD101C0074FFC9 /* Icon@2x.png in Resources */,
 				36ABE42D192798EF00537BA6 /* Nature_Emo.jpg in Resources */,
+				E187E8B41C0400F60077E425 /* coffeefont_alphabet.txt in Resources */,
 				367D269B19363AE0005DF48B /* EmojiArtHappy.plist in Resources */,
 				E18729AD1BF83D95006C5701 /* delete_button@3x.png in Resources */,
 				367D269419363AE0005DF48B /* EmojiArtExpressions.plist in Resources */,
@@ -1442,6 +1461,7 @@
 				36ABE4651927A2B400537BA6 /* alphabets_settings.plist in Resources */,
 				360F7EDB17C655CE00512914 /* p_free@2x.png in Resources */,
 				E1FE9B7A1BFA1279005E7A80 /* ReviewRegular@2x.png in Resources */,
+				E187E8B61C0401520077E425 /* blackball_alphabet.txt in Resources */,
 				E1DB48B51BF72CFB00EEDCF8 /* emoji_button_sel@3x.png in Resources */,
 				360F7EDC17C655CE00512914 /* p_rads.png in Resources */,
 				E172A3D51BF7128400112B7E /* button_keyboard_delete@2x.png in Resources */,
@@ -1490,6 +1510,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E187E8B71C0405DA0077E425 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 71535b6898de6fae699ed383533e21bf7fa1d1c0 18462427b54e6ffdce53a38727ecb7c0692d16ad6f3796be9800e2f4360b366c";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3699714017368ED700D47276 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1501,7 +1537,6 @@
 				3699715817368ED800D47276 /* AppDelegate.m in Sources */,
 				3699717F1736A32800D47276 /* UIColor+HexColor.m in Sources */,
 				36C8FE5A17373F02002B7E6D /* SettingViewController.m in Sources */,
-				3658985D176C5D9700EE1C1F /* FontViewController.m in Sources */,
 				36AB5376184A31CF0082ADEF /* EmoticonMainViewController.m in Sources */,
 				36FDF35217BBDCD60083165E /* EmoticonCell.m in Sources */,
 				369D11F9176239C400C607A8 /* MBProgressHUD.m in Sources */,
@@ -1635,7 +1670,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "938e4588-794a-4911-a79a-0673406244e4";
+				PROVISIONING_PROFILE = "6190b452-cb69-4ad6-b4c2-72c603b8ee3a";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "ef2dca50-c881-45ec-ae3c-2247c2fb1fcd";
 				SDKROOT = iphoneos;
 			};
@@ -1678,14 +1713,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chen Shun (Y62CH6PVF9)";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "../../GoogleMobileAdsSdkiOS-7.5.2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"../../GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontDesigner/Characters-Prefix.pch";
 				INFOPLIST_FILE = "FontDesigner/Characters-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "Emoticons & Emoji Keyboard";
-				PROVISIONING_PROFILE = "938e4588-794a-4911-a79a-0673406244e4";
+				PROVISIONING_PROFILE = "6190b452-cb69-4ad6-b4c2-72c603b8ee3a";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "938e4588-794a-4911-a79a-0673406244e4";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1701,7 +1739,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CHEN SHUN";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "../../GoogleMobileAdsSdkiOS-7.5.2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"../../GoogleMobileAdsSdkiOS-7.5.2",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FontDesigner/Characters-Prefix.pch";
 				INFOPLIST_FILE = "FontDesigner/Characters-Info.plist";

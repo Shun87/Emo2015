@@ -19,6 +19,9 @@
 #import "ArtViewController.h"
 #import "FavoriteViewController.h"
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 @implementation AppDelegate
 @synthesize systemFontFamily;
 #if FreeApp
@@ -75,6 +78,8 @@
     [iRate sharedInstance].usesUntilPrompt = 3;
     [iRate sharedInstance].daysUntilPrompt = 0.5;
     
+    [Fabric with:@[[Crashlytics class]]];
+    
     return YES;
 }
 
@@ -86,9 +91,9 @@
     GADRequest *request = [GADRequest request];
 
 #if DEBUG
-    request.testDevices = @[
-                            @"2077ef9a63d2b398840261c8221a0c9a"  // Eric's iPod Touch
-                            ];
+//    request.testDevices = @[
+//                            @"2077ef9a63d2b398840261c8221a0c9a"  // Eric's iPod Touch
+//                            ];
 #endif
     return request;
 }

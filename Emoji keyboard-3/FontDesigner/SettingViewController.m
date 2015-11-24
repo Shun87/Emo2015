@@ -282,7 +282,7 @@
         if (row == 0)
         {
             #if FreeApp
-            [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.0", nil) body:nil];
+            [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.2", nil) body:nil];
             #else
             [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard PRO 1.3", nil) body:nil];
             #endif
