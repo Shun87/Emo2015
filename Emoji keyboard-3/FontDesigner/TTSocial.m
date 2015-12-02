@@ -43,7 +43,6 @@
                 };
                 [viewController presentViewController:slcomposeViewController animated:YES completion:nil];
             }
-            
         }
         else
         {

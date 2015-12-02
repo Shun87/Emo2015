@@ -35,24 +35,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.navigationController.navigationBar.translucent = NO;
-    self.extendedLayoutIncludesOpaqueBars = NO;
-    self.modalPresentationCapturesStatusBarAppearance = NO;
-    self.tabBarController.tabBar.translucent = NO;
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.navigationController.navigationBar.translucent = NO;
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.modalPresentationCapturesStatusBarAppearance = NO;
+        self.tabBarController.tabBar.translucent = NO;
+    }
     
-    segment = [[UISegmentedControl alloc] initWithItems:@[ @"Text Art", @"Emoji"]];
+    segment = [[UISegmentedControl alloc] initWithItems:@[@"Text Art", @"Emoji"]];
     segment.selectedSegmentIndex = 0;
     segment.segmentedControlStyle = UISegmentedControlStyleBar;
     [segment addTarget:self
                 action:@selector(selectIndexChanged:) forControlEvents:UIControlEventValueChanged];
     segment.selectedSegmentIndex = 0;
     self.navigationItem.titleView = segment;
-    
+
     artCotentController = [[ArtViewController alloc] initWithNibName:@"ArtViewController" bundle:nil];
     artCotentController.showIndex = nil;
+    artCotentController.viewController = self;
     [self.view addSubview:artCotentController.view];
-    
+    artCotentController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
+
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(startEdit:)];
 }
 
@@ -114,6 +120,8 @@
         {
             artCotentController = [[ArtViewController alloc] initWithNibName:@"ArtViewController" bundle:nil];
             artCotentController.showIndex = nil;
+            artCotentController.viewController = self;
+            artCotentController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         }
         [self.view addSubview:artCotentController.view];
         artCotentController.view.frame = self.view.bounds;
@@ -129,6 +137,8 @@
         {
             emotionViewController = [[EmoticonViewController alloc] initWithNibName:@"EmoticonViewController" bundle:nil];
             emotionViewController.localFavorite = YES;
+            emotionViewController.viewController = self;
+            emotionViewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         }
  
         [self.view addSubview:emotionViewController.view];

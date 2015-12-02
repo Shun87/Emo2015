@@ -20,6 +20,8 @@
 #import "PureLayout.h"
 #import "BubbleView.h"
 
+#import "ModalSpreadApp.h"
+
 @interface FontPreviewController ()
 {
     UIImageView *bubbleImageView;
@@ -59,10 +61,14 @@
 {
     [super viewDidLoad];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars = NO;
-    self.modalPresentationCapturesStatusBarAppearance = NO;
-    self.tabBarController.tabBar.translucent = NO;
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        self.modalPresentationCapturesStatusBarAppearance = NO;
+        self.tabBarController.tabBar.translucent = NO;
+    }
+
 
     self.buttons = [[NSMutableArray alloc] init];
     
@@ -328,6 +334,12 @@
     [self reloadBanner:nil];
     oldRect = textView1.frame;
     [self performSelector:@selector(beganEding) withObject:nil afterDelay:0.1];
+    [self performSelector:@selector(showOtherApp) withObject:nil afterDelay:1];
+}
+
+- (void)showOtherApp
+{
+    [[ModalSpreadApp sharedInstance] showOtherApp];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

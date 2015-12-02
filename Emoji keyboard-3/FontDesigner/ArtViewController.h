@@ -24,7 +24,7 @@ UITableViewDelegate, UIAlertViewDelegate>
 @property (nonatomic, copy)NSString *title;
 @property (nonatomic, copy)NSString *showIndex;
 @property BOOL showByFontKeyboard;
-
+@property (nonatomic, weak)UIViewController *viewController;
 - (void)loadAd;
 - (void)startEding:(BOOL)edit;
 - (void)showArtText:(NSString *)text;

@@ -307,10 +307,8 @@
     {
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
         actionSheet.delegate = self;
-        [actionSheet showFromRect:rect inView:self.tabBarController.view animated:YES];
-
+        [actionSheet showInView:self.view];
     }
-
 }
 
 - (NSString *)fileName
@@ -396,7 +394,14 @@
     self.navigationItem.title = title;
     
     social = [[TTSocial alloc] init];
-    social.viewController = self;
+    if (self.viewController != nil)
+    {
+        social.viewController = self.viewController;
+    }
+    else
+    {
+        social.viewController = self;
+    }
     
 //    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [button setImage:[UIImage imageNamed:@"back_white.png"] forState:UIControlStateNormal];

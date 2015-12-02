@@ -24,7 +24,7 @@ UITableViewDelegate, EmoticonCellDelegate, UIActionSheetDelegate>
 @property NSInteger selectIndex;
 @property (nonatomic, retain)UIImage *image;
 @property (nonatomic, copy)NSString *emtionTitle;
-
+@property (nonatomic, weak)UIViewController *viewController;
 @property (nonatomic, assign)BOOL localFavorite;
 @property BOOL animated;
 - (void)loadAd;

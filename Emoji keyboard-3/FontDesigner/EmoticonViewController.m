@@ -58,7 +58,14 @@
     
     [self localEmoji];
     social = [[TTSocial alloc] init];
-    social.viewController = self;
+    if (self.viewController != nil)
+    {
+        social.viewController = self.viewController;
+    }
+    else
+    {
+        social.viewController = self;
+    }
 }
 
 - (void)startEding:(BOOL)edit
