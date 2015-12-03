@@ -13,10 +13,12 @@
 
 
 #import "AppDelegate.h"
+#import "InAppRageIAPHelper.h"
 
 @interface SettingViewController ()
 {
     TTSocial *socila;
+    InAppRageIAPHelper *iapHelper;
 }
 @end
 
@@ -36,6 +38,7 @@
         self.tabBarItem.image = [UIImage imageNamed:@"Settings.png"];
         socila = [[TTSocial alloc] init];
         socila.viewController = self;
+        iapHelper = [[InAppRageIAPHelper alloc] init];
     }
     
     return self;
@@ -44,8 +47,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productsLoaded:) name:kProductsLoadedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(productPurchased:) name:kProductPurchasedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(productPurchaseFailed:) name:kProductPurchaseFailedNotification object: nil];
+    
     self.appArray = [MoreApp moreApps];
+}
+
+- (void)productsLoaded:(NSNotification *)notification
+{
+    NSLog(@"productsLoaded");
+}
+
+- (void)productPurchased:(NSNotification *)notification
+{
+    NSString *productIdentifier = (NSString *)[notification object];
+    NSLog(@"provideContent Toggling flag for: %@", productIdentifier);
+    [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:productIdentifier];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)productPurchaseFailed:(NSNotification *)notification
+{
+    NSLog(@"productPurchaseFailed");
 }
 
 - (IBAction)goBack:(id)sender
@@ -72,7 +97,7 @@
     label.font = [UIFont boldSystemFontOfSize:14];
     label.autoresizingMask = UIViewAutoresizingFlexibleRightMargin;
 #if FreeApp
-    if ([indexPath section] == 1)
+    if ([indexPath section] == 2)
 #else
     if ([indexPath section] == 0)
 #endif
@@ -130,6 +155,10 @@
 
     if (section == 0)
     {
+        cell.textLabel.text = NSLocalizedString(@"Restore", nil);
+    }
+    else if (section == 1)
+    {
         if (row == 0)
         {
             cell.textLabel.text = NSLocalizedString(@"Send feedback", nil);
@@ -138,7 +167,7 @@
             cell.textLabel.text = NSLocalizedString(@"Rate us", nil);
         }
     }
-    else if (section == 1)
+    else if (section == 2)
 #else
     if (section == 0)
     {
@@ -177,7 +206,7 @@
 {
     // Return the number of sections.
 #if FreeApp
-    return 2;
+    return 3;
 #else
     return 2;
 #endif
@@ -187,15 +216,15 @@
 {
 #if FreeApp
 
-    if (section == 0)
+    if (section == 1)
     {
         return 2;
     }
-    else if (section == 1)
+    else if (section == 2)
     {
         return [appArray count] + 1;
     }
-    else if (section == 2)
+    else if (section == 0)
     {
         return 1;
     }
@@ -218,15 +247,15 @@
 #if FreeApp
     if (section == 0)
     {
-        return NSLocalizedString(@"Feedback", nil);
+        return NSLocalizedString(@"Restore", nil);
     }
-    else if (section == 1)
+    if (section == 1)
     {
-        return NSLocalizedString(@"More Apps", nil);
+        return NSLocalizedString(@"Feedback", nil);
     }
     else if (section == 2)
     {
-        return NSLocalizedString(@"About", nil);
+        return NSLocalizedString(@"More Apps", nil);
     }
 #else
 
@@ -257,7 +286,6 @@
  
     }
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSInteger section = [indexPath section];
     NSInteger row = [indexPath row];
     cell.textLabel.backgroundColor = [UIColor clearColor];
@@ -275,6 +303,10 @@
     NSInteger row = [indexPath row];
 #if FreeApp
     if (section == 0)
+    {
+        [iapHelper restoreIap];
+    }
+    else if (section == 1)
 #else
     if (section == 0)
 #endif
@@ -282,7 +314,7 @@
         if (row == 0)
         {
             #if FreeApp
-            [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.2", nil) body:nil];
+            [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard 3.3", nil) body:nil];
             #else
             [socila sendFeedback:NSLocalizedString(@"Emoji Keyboard PRO 1.3", nil) body:nil];
             #endif
@@ -297,7 +329,7 @@
         }
     }
 #if FreeApp
-    else if (section == 1)
+    else if (section == 2)
 #else
     else if (section == 1)
 #endif

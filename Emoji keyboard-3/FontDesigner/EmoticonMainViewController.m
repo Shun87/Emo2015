@@ -181,12 +181,21 @@
     {
         [app.adBanner removeFromSuperview];
     }
-
+    
+    if ([app showAds])
+    {
         CGRect rect = app.adBanner.frame;
         rect.origin.y = self.view.frame.size.height - rect.size.height;
         app.adBanner.frame = rect;
         app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         [self.view addSubview:app.adBanner];
+    }
+    else
+    {
+        mTableView.frame = self.view.bounds;
+        app.adBanner = nil;
+    }
+
 
 #endif
     [mTableView reloadData];

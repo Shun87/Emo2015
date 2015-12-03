@@ -56,18 +56,21 @@
     
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: artControllerNav, fontPreviewNav, emoticonViewNav, artCotentControllerNav, settingNav, nil];
 #if FreeApp
-
+    
+    if ([self showAds])
+    {
         // Initialize the banner at the bottom of the screen.
         CGPoint origin = CGPointMake(0.0, 0.0);
         GADAdSize gadSize = kGADAdSizeSmartBannerPortrait;
         self.adBanner = [[GADBannerView alloc] initWithAdSize:gadSize
-                                                        origin:origin];
+                                                       origin:origin];
         self.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
         self.adBanner.adUnitID = @"ca-app-pub-2517211357606902/9103665272";
         self.adBanner.delegate = self;
         [self.adBanner setRootViewController:self.tabBarController];
         [self.adBanner loadRequest:[self createRequest]];
-    
+    }
+
 #else
 #endif
 
@@ -81,6 +84,13 @@
     [Fabric with:@[[Crashlytics class]]];
     
     return YES;
+}
+
+-(BOOL)showAds
+{
+    BOOL unlockAll = [[NSUserDefaults standardUserDefaults] boolForKey:kUnlockAll];
+    BOOL removeAd = [[NSUserDefaults standardUserDefaults] boolForKey:kRmoveAds];
+    return !unlockAll && !removeAd;
 }
 
 #if FreeApp

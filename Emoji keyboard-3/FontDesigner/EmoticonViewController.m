@@ -279,11 +279,19 @@
         [app.adBanner removeFromSuperview];
     }
     
-    CGRect rect = app.adBanner.frame;
-    rect.origin.y = self.view.frame.size.height - rect.size.height;
-    app.adBanner.frame = rect;
-    app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-    [self.view addSubview:app.adBanner];
+    if ([app showAds])
+    {
+        CGRect rect = app.adBanner.frame;
+        rect.origin.y = self.view.frame.size.height - rect.size.height;
+        app.adBanner.frame = rect;
+        app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+        [self.view addSubview:app.adBanner];
+    }
+    else
+    {
+        app.adBanner = nil;
+        mTableView.frame = self.view.bounds;
+    }
 }
 
 - (void)localEmoji

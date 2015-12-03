@@ -18,7 +18,7 @@
     if ((self = [super init])) {
         
         // Store product identifiers
-        _productIdentifiers = [productIdentifiers retain];
+        _productIdentifiers = productIdentifiers;
         _products = nil;
         
         // Check for previously purchased products
@@ -43,7 +43,7 @@
 
 - (void)requestProducts {
     
-    self.request = [[[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers] autorelease];
+    self.request = [[SKProductsRequest alloc] initWithProductIdentifiers:_productIdentifiers];
     _request.delegate = self;
     [_request start];
     
@@ -143,15 +143,6 @@
 - (void)dealloc
 {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
-    [_productIdentifiers release];
-    _productIdentifiers = nil;
-    [_products release];
-    _products = nil;
-    [_purchasedProducts release];
-    _purchasedProducts = nil;
-    [_request release];
-    _request = nil;
-    [super dealloc];
 }
 
 @end

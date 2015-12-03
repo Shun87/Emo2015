@@ -281,12 +281,17 @@
         [app.adBanner removeFromSuperview];
     }
 
+    if ([app showAds])
     {
         CGRect rect = app.adBanner.frame;
         rect.origin.y = 0;
         app.adBanner.frame = rect;
         app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
         [self.view addSubview:app.adBanner];
+    }
+    else
+    {
+        app.adBanner = nil;
     }
 
 #endif

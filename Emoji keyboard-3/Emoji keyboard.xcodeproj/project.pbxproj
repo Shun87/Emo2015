@@ -200,6 +200,9 @@
 		36FDF35017BBDCA10083165E /* EmoticonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FDF26E17BBAC620083165E /* EmoticonViewController.m */; };
 		36FDF35117BBDCBA0083165E /* EmoticonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36FDF26F17BBAC620083165E /* EmoticonViewController.xib */; };
 		36FDF35217BBDCD60083165E /* EmoticonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FDF26C17BBAC620083165E /* EmoticonCell.m */; };
+		E16567611C0FDEA80063E27F /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E165675A1C0FDEA80063E27F /* IAPHelper.m */; };
+		E16567621C0FDEA80063E27F /* InAppRageIAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E165675C1C0FDEA80063E27F /* InAppRageIAPHelper.m */; };
+		E16567641C0FDEA80063E27F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E16567601C0FDEA80063E27F /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E172A3C91BF6D12300112B7E /* HorizontalTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E172A3C41BF6D12300112B7E /* HorizontalTableView.m */; };
 		E172A3CA1BF6D12300112B7E /* UIView+Framing.m in Sources */ = {isa = PBXBuildFile; fileRef = E172A3C61BF6D12300112B7E /* UIView+Framing.m */; };
 		E172A3CB1BF6D12300112B7E /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = E172A3C81BF6D12300112B7E /* UIView+Subviews.m */; };
@@ -555,6 +558,12 @@
 		36FDF26F17BBAC620083165E /* EmoticonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmoticonViewController.xib; sourceTree = "<group>"; };
 		36FDF34C17BBD39A0083165E /* bubbleSomeone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbleSomeone.png; sourceTree = "<group>"; };
 		36FDF34D17BBD39B0083165E /* bubbleSomeone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubbleSomeone@2x.png"; sourceTree = "<group>"; };
+		E16567591C0FDEA80063E27F /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		E165675A1C0FDEA80063E27F /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		E165675B1C0FDEA80063E27F /* InAppRageIAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppRageIAPHelper.h; sourceTree = "<group>"; };
+		E165675C1C0FDEA80063E27F /* InAppRageIAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppRageIAPHelper.m; sourceTree = "<group>"; };
+		E165675F1C0FDEA80063E27F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E16567601C0FDEA80063E27F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E172A3C31BF6D12300112B7E /* HorizontalTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTableView.h; sourceTree = "<group>"; };
 		E172A3C41BF6D12300112B7E /* HorizontalTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTableView.m; sourceTree = "<group>"; };
 		E172A3C51BF6D12300112B7E /* UIView+Framing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Framing.h"; sourceTree = "<group>"; };
@@ -1109,6 +1118,19 @@
 			path = "../../../MicsAbout/App spread ";
 			sourceTree = "<group>";
 		};
+		E16567581C0FDEA80063E27F /* iap */ = {
+			isa = PBXGroup;
+			children = (
+				E16567591C0FDEA80063E27F /* IAPHelper.h */,
+				E165675A1C0FDEA80063E27F /* IAPHelper.m */,
+				E165675B1C0FDEA80063E27F /* InAppRageIAPHelper.h */,
+				E165675C1C0FDEA80063E27F /* InAppRageIAPHelper.m */,
+				E165675F1C0FDEA80063E27F /* Reachability.h */,
+				E16567601C0FDEA80063E27F /* Reachability.m */,
+			);
+			path = iap;
+			sourceTree = "<group>";
+		};
 		E172A3C21BF6D12300112B7E /* HorizontalTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1157,6 +1179,7 @@
 		E1FE31D91BF4AF730006147A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				E16567581C0FDEA80063E27F /* iap */,
 				E172A3C21BF6D12300112B7E /* HorizontalTableView */,
 				E1FE31CB1BF4AF4B0006147A /* PureLayout */,
 				36FDF26B17BBAC620083165E /* EmoticonCell.h */,
@@ -1539,6 +1562,8 @@
 				36C8FE5A17373F02002B7E6D /* SettingViewController.m in Sources */,
 				36AB5376184A31CF0082ADEF /* EmoticonMainViewController.m in Sources */,
 				36FDF35217BBDCD60083165E /* EmoticonCell.m in Sources */,
+				E16567621C0FDEA80063E27F /* InAppRageIAPHelper.m in Sources */,
+				E16567641C0FDEA80063E27F /* Reachability.m in Sources */,
 				369D11F9176239C400C607A8 /* MBProgressHUD.m in Sources */,
 				E1C4E6FC1BFAE38C006BC6B6 /* NSDate+Additions.m in Sources */,
 				36F9C5BE174E643500CD26F8 /* SymbolsViewController.m in Sources */,
@@ -1559,6 +1584,7 @@
 				36153D68176F63AF00401FB8 /* FontPreviewController.m in Sources */,
 				36FC3B8A1760DBBA00434D5A /* MoreApp.m in Sources */,
 				36153C5F176F52DC00401FB8 /* SymbolUnits.m in Sources */,
+				E16567611C0FDEA80063E27F /* IAPHelper.m in Sources */,
 				3617B54E1795957D0008A26A /* ArtEmojiViewController.m in Sources */,
 				3617B54F1795957F0008A26A /* ArtViewController.m in Sources */,
 				3617B5551795960E0008A26A /* NSString+MessagesView.m in Sources */,

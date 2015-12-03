@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "IAPHelper.h"
+#import "AppDelegate.h"
 
-#define kUnlockAll      @"com.cshun.FontDesignUnlockall"
-#define kEmoticons      @"com.cshun.FontDesign.Unlockallemoticons"
 
 @interface InAppRageIAPHelper : IAPHelper {
 

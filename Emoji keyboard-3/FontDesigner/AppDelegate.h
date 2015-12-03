@@ -12,6 +12,10 @@
 
 #define FreeApp 1
 
+#define kUnlockAll      @"com.cshun.FontDesignUnlockall"
+#define kEmoticons      @"com.cshun.FontDesign.Unlockallemoticons"
+#define kRmoveAds       @"com.cshun.FontDesign.RemoveAd"
+
 #if FreeApp
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #endif
@@ -35,4 +39,5 @@
 #endif
 @property (strong, nonatomic) UITabBarController *tabBarController;
 
+-(BOOL)showAds;
 @end

@@ -66,15 +66,23 @@
         [app.adBanner removeFromSuperview];
     }
     
-    CGRect rect = mTableView.frame;
-    rect.size.height = self.view.bounds.size.height - app.adBanner.frame.size.height - 8;
-    mTableView.frame = rect;
-    
-    rect = app.adBanner.frame;
-    rect.origin.y = self.view.frame.size.height - rect.size.height;
-    app.adBanner.frame = rect;
-    app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
-    [self.view addSubview:app.adBanner];
+    if ([app showAds])
+    {
+        CGRect rect = mTableView.frame;
+        rect.size.height = self.view.bounds.size.height - app.adBanner.frame.size.height - 8;
+        mTableView.frame = rect;
+        
+        rect = app.adBanner.frame;
+        rect.origin.y = self.view.frame.size.height - rect.size.height;
+        app.adBanner.frame = rect;
+        app.adBanner.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+        [self.view addSubview:app.adBanner];
+    }
+    else
+    {
+        app.adBanner = nil;
+        mTableView.frame = self.view.bounds;
+    }
 }
 
 - (void)showArtText:(NSString *)text

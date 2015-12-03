@@ -20,10 +20,10 @@
     SKProductsRequest * _request;
 }
 
-@property (retain) NSSet *productIdentifiers;
-@property (retain) NSArray * products;
-@property (retain) NSMutableSet *purchasedProducts;
-@property (retain) SKProductsRequest *request;
+@property (strong) NSSet *productIdentifiers;
+@property (strong) NSArray * products;
+@property (strong) NSMutableSet *purchasedProducts;
+@property (strong) SKProductsRequest *request;
 
 - (void)requestProducts;
 - (id)initWithProductIdentifiers:(NSSet *)productIdentifiers;
