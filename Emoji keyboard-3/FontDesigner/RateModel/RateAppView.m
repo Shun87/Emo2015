@@ -82,7 +82,7 @@
     [titleLabel autoAlignAxisToSuperviewAxis:ALAxisVertical];
     titleLabel.numberOfLines = 0;
     titleLabel.preferredMaxLayoutWidth = 220;
-    titleLabel.text = @"Hi there, what do you think about Contacts Cleaner?";
+    titleLabel.text = @"Hi there, what do you think about Emoji keyboard?";
     titleLabel.font = [UIFont systemFontOfSize:18];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     

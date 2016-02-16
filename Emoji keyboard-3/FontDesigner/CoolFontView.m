@@ -15,7 +15,7 @@
 {
     if (self = [super init])
     {
-        dictionary = [[NSMutableDictionary alloc] init];
+        mutableDictionary = [[NSMutableDictionary alloc] init];
         self.sourceFile = fileName;
         self.demon = demo;
     }
@@ -33,18 +33,19 @@
         NSArray *subArray = [subStr componentsSeparatedByString:@"-"];
         if ([subArray count] == 2)
         {
-            [dictionary setValue:[subArray objectAtIndex:1] forKey:[subArray objectAtIndex:0]];
+            NSString *key = [subArray objectAtIndex:0];
+            [mutableDictionary setObject:[subArray objectAtIndex:1] forKey:key];
         }
     }
 }
 
 - (NSString *)mapStrForNormal:(NSString *)normalStr
 {
-    if ([dictionary count] == 0)
+    if ([mutableDictionary count] == 0)
     {
         [self loadMapStr];
     }
-    return [dictionary valueForKey:normalStr];
+    return [mutableDictionary objectForKey:normalStr];
 }
 
 - (void)dealloc

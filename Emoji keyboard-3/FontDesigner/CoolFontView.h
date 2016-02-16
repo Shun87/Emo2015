@@ -10,7 +10,7 @@
 
 @interface CoolFont : NSObject
 {
-    NSMutableDictionary *dictionary;
+    NSMutableDictionary *mutableDictionary;
 }
 @property (nonatomic, copy)NSString *sourceFile;
 @property (nonatomic, copy)NSString *demon;

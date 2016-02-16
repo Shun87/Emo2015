@@ -210,6 +210,7 @@
     paragraphStyle.lineBreakMode = lineBreakMode;
     NSDictionary *attributes = @{NSFontAttributeName:font, NSParagraphStyleAttributeName:paragraphStyle};
     CGRect boundingRect = [string boundingRectWithSize:constrainedSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+    
     return CGSizeMake(ceilf(boundingRect.size.width), ceilf(boundingRect.size.height));
 }
 
@@ -225,7 +226,18 @@
     }
     if (self.heightConstraint)
     {
-        float newHeight = [self sizeForString:textView1.text font:[UIFont systemFontOfSize:20] constrainedToSize:CGSizeMake(textView1.frame.size.width, 2000) lineBreakMode:NSLineBreakByWordWrapping].height;
+        float newHeight = 0.0;
+        if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+        {
+            newHeight = [self sizeForString:textView1.text font:[UIFont systemFontOfSize:20] constrainedToSize:CGSizeMake(textView1.frame.size.width, 2000) lineBreakMode:NSLineBreakByWordWrapping].height;
+        }
+        else
+        {
+             newHeight = [textView1.text sizeWithFont:[UIFont systemFontOfSize:20]
+                   constrainedToSize:CGSizeMake(textView1.frame.size.width, 2000)
+                       lineBreakMode:NSLineBreakByWordWrapping].height;
+        }
+
         
         self.heightConstraint.constant = newHeight + 16.0;
         [bubbleImageView setNeedsLayout];
@@ -318,7 +330,14 @@
                                   nil];
     actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
     actionSheet.delegate = self;
-	[actionSheet showInView:self.tabBarController.view];
+    if (self.tabBarController.view != nil)
+    {
+        [actionSheet showInView:self.tabBarController.view];
+    }
+    else
+    {
+        [actionSheet showInView:self.view];
+    }
 }
 
 - (IBAction)clearAction:(id)sender

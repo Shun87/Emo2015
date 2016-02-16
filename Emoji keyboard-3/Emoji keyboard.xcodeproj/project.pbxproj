@@ -397,7 +397,7 @@
 		367D278719364552005DF48B /* Sport_Emo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sport_Emo.jpg; sourceTree = "<group>"; };
 		3685018719168891009EB62C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3685018919168897009EB62C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3699714417368ED700D47276 /* Emoticons & Emoji Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoticons & Emoji Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3699714417368ED700D47276 /* Best Emoji Keyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Best Emoji Keyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3699714717368ED700D47276 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3699714917368ED700D47276 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3699714B17368ED700D47276 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -893,7 +893,7 @@
 		3699714517368ED700D47276 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3699714417368ED700D47276 /* Emoticons & Emoji Keyboard.app */,
+				3699714417368ED700D47276 /* Best Emoji Keyboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1252,7 +1252,7 @@
 			);
 			name = "Emoji keyboard";
 			productName = FontDesigner;
-			productReference = 3699714417368ED700D47276 /* Emoticons & Emoji Keyboard.app */;
+			productReference = 3699714417368ED700D47276 /* Best Emoji Keyboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1724,7 +1724,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = "-ObjC";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "eafc643d-52ea-478b-b087-8166535a02a4";
+				PROVISIONING_PROFILE = "2d2928b8-fe05-4399-820d-1ea851d803e6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2d2928b8-fe05-4399-820d-1ea851d803e6";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1748,7 +1749,7 @@
 				INFOPLIST_FILE = "FontDesigner/Characters-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "Emoticons & Emoji Keyboard";
+				PRODUCT_NAME = "Best Emoji Keyboard";
 				PROVISIONING_PROFILE = "6190b452-cb69-4ad6-b4c2-72c603b8ee3a";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "938e4588-794a-4911-a79a-0673406244e4";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1774,8 +1775,8 @@
 				INFOPLIST_FILE = "FontDesigner/Characters-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "Emoticons & Emoji Keyboard";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "eafc643d-52ea-478b-b087-8166535a02a4";
+				PRODUCT_NAME = "Best Emoji Keyboard";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2d2928b8-fe05-4399-820d-1ea851d803e6";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

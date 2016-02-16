@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3699714317368ED700D47276"
-               BuildableName = "Emoticons &amp; Emoji Keyboard.app"
+               BuildableName = "Best Emoji Keyboard.app"
                BlueprintName = "Emoji keyboard"
                ReferencedContainer = "container:Emoji keyboard.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3699714317368ED700D47276"
-            BuildableName = "Emoticons &amp; Emoji Keyboard.app"
+            BuildableName = "Best Emoji Keyboard.app"
             BlueprintName = "Emoji keyboard"
             ReferencedContainer = "container:Emoji keyboard.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3699714317368ED700D47276"
-            BuildableName = "Emoticons &amp; Emoji Keyboard.app"
+            BuildableName = "Best Emoji Keyboard.app"
             BlueprintName = "Emoji keyboard"
             ReferencedContainer = "container:Emoji keyboard.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3699714317368ED700D47276"
-            BuildableName = "Emoticons &amp; Emoji Keyboard.app"
+            BuildableName = "Best Emoji Keyboard.app"
             BlueprintName = "Emoji keyboard"
             ReferencedContainer = "container:Emoji keyboard.xcodeproj">
          </BuildableReference>

@@ -96,7 +96,14 @@
                                       nil];
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
         actionSheet.delegate = self;
-        [actionSheet showInView:self.tabBarController.view];
+        if (self.tabBarController.view != nil)
+        {
+            [actionSheet showInView:self.tabBarController.view];
+        }
+        else
+        {
+            [actionSheet showInView:self.view];
+        }
     }
     else
     {
@@ -111,7 +118,14 @@
                                       nil];
         actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
         actionSheet.delegate = self;
-        [actionSheet showInView:self.tabBarController.view];
+        if (self.tabBarController.view != nil)
+        {
+            [actionSheet showInView:self.tabBarController.view];
+        }
+        else
+        {
+            [actionSheet showInView:self.view];
+        }
     }
 }
 
